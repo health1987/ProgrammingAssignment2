@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## get cached data
 
-## Write a short comment describing this function
+## get cached data when you generated data once
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y) {
@@ -16,6 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
              getmatrix = getmatrix)
 }
 
+## solve the matrix
 cacheSolve <- function(x, ...) {
         m <- x$getmatrix()
         if(!is.null(m)) {
